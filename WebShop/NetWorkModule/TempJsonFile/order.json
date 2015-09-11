@@ -1,0 +1,37 @@
+{
+    "message": "OK", 
+    "status": 2000000, 
+    "data": [
+        {
+            "orderId": "4",
+            "receiverName": "明明",
+            "receiverAdress": "广州市",
+            "receiverPhone":"158745633",
+            "payment":"支付宝",
+            "time":"2015.05.06",
+            "additionInfo":"尽快送货",
+            
+            "user":
+             {
+             "userId": "1",
+             "username": "小王",
+             "password": "123",
+             "phone":"123456",
+             "email":"123456@qq.com",
+             "imgOfHead":"xx.png"
+             },
+             
+             "product":
+             {
+             "productId": "4",
+             "proName": "A4",
+             "saleCount": "1",
+             "image":"",
+             "price":"11.0",
+             "decript":"good",
+             "salesDate":"2015.02.03"
+        
+             }
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="ShoppingCartCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="e77-Qt-RTW">
+                        <rect key="frame" x="50" y="8" width="72" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="e77-Qt-RTW" secondAttribute="height" multiplier="1:1" id="LkY-qz-L53"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-Gj-rYa">
+                        <rect key="frame" x="141" y="8" width="150" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eP4-Gj-rYa" secondAttribute="height" multiplier="150:47" id="PPy-nb-kZ2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnRed.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Uk-jw-lu0">
+                        <rect key="frame" x="15" y="35" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8Uk-jw-lu0" secondAttribute="height" multiplier="1:1" id="1vg-Ur-tF9"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCV-NV-UgV">
+                        <rect key="frame" x="15" y="35" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wCV-NV-UgV" secondAttribute="height" multiplier="1:1" id="uLy-Qz-vz3"/>
+                        </constraints>
+                        <connections>
+                            <action selector="btnChooseClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uUy-tb-jvs"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥998.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG8-bO-Cvo">
+                        <rect key="frame" x="141" y="50" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VG8-bO-Cvo" secondAttribute="height" multiplier="40:7" id="Lru-r6-2gR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e77-Qt-RTW" firstAttribute="leading" secondItem="wCV-NV-UgV" secondAttribute="trailing" constant="15" id="4Oe-Wh-Wsa"/>
+                    <constraint firstItem="wCV-NV-UgV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="FSs-pa-6IT"/>
+                    <constraint firstItem="8Uk-jw-lu0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="27" id="G7S-w6-wvN"/>
+                    <constraint firstItem="8Uk-jw-lu0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Msr-0H-fWK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="e77-Qt-RTW" secondAttribute="bottom" constant="1" id="NAB-mG-9Jd"/>
+                    <constraint firstItem="e77-Qt-RTW" firstAttribute="leading" secondItem="8Uk-jw-lu0" secondAttribute="trailing" constant="15" id="OXb-xg-24o"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eP4-Gj-rYa" secondAttribute="bottom" constant="26" id="Or8-Mt-Ccy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8Uk-jw-lu0" secondAttribute="bottom" constant="26" id="QAM-Ya-KSR"/>
+                    <constraint firstItem="e77-Qt-RTW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SLN-Ta-96B"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VG8-bO-Cvo" secondAttribute="trailing" constant="51" id="SwV-ud-3eU"/>
+                    <constraint firstItem="eP4-Gj-rYa" firstAttribute="leading" secondItem="e77-Qt-RTW" secondAttribute="trailing" constant="19" id="UUH-Dr-gwU"/>
+                    <constraint firstItem="VG8-bO-Cvo" firstAttribute="leading" secondItem="e77-Qt-RTW" secondAttribute="trailing" constant="19" id="UqD-e0-IGF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VG8-bO-Cvo" secondAttribute="bottom" constant="10" id="ccF-4D-Owt"/>
+                    <constraint firstItem="wCV-NV-UgV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="27" id="dYe-Fx-8Hc"/>
+                    <constraint firstItem="eP4-Gj-rYa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="jrJ-0q-VpP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eP4-Gj-rYa" secondAttribute="trailing" constant="21" id="qVZ-VP-vCU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wCV-NV-UgV" secondAttribute="bottom" constant="26" id="r7h-dX-Dys"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnChoose" destination="wCV-NV-UgV" id="IPQ-FI-USG"/>
+                <outlet property="imgForBtnSeleted" destination="8Uk-jw-lu0" id="Kfn-HT-aDI"/>
+                <outlet property="imgProduct" destination="e77-Qt-RTW" id="U1d-2i-BEY"/>
+                <outlet property="lblPrice" destination="VG8-bO-Cvo" id="PdD-Bb-d9n"/>
+                <outlet property="lblProName" destination="eP4-Gj-rYa" id="sVu-Gu-tYN"/>
+            </connections>
+            <point key="canvasLocation" x="207" y="1"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg2.png" width="1080" height="496"/>
+        <image name="btnRed.png" width="10" height="10"/>
+    </resources>
+</document>

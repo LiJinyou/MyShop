@@ -1,0 +1,21 @@
+{
+    "message": "OK", 
+    "status": 2000000, 
+    "data": {
+        "expire": "1440124487332", 
+        "sessionId": "36702c081b3cca1bced2299db398a73b", 
+        "user": {
+            "uid": "1", 
+            "phone": "13800000000", 
+            "lastAccessTime": "1437234990294", 
+            "lastAccessIp": "119.129.211.161", 
+            "bUserId": "", 
+            "device": 0, 
+            "avatarUrl": "http://localhost:9052/res/apg/75/2E/9025f3dfc0ed4f3150b9d7e1e510f760", 
+            "nickname": "我不信我名字还不够长", 
+            "realname": "", 
+            "type": 0, 
+            "merchantsId": "4"
+        }
+    }
+}

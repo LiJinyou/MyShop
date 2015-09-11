@@ -1,0 +1,14 @@
+{
+    "message": "OK", 
+    "status": 2000000, 
+    "data": [
+        {
+            "userId": "1",
+            "username": "小王",
+            "password": "123",
+            "phone":"123456",
+            "email":"123456@qq.com",
+            "imgOfHead":"xx.png"
+        }
+    ]
+}
