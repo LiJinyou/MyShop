@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceCell" rowHeight="164" id="KGk-i7-Jjw" customClass="PriceCell">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWB-lE-BlZ">
+                        <rect key="frame" x="18" y="59" width="366" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="ZOp-CA-7G0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.1647058824" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥29.00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IC-DX-ALf">
+                        <rect key="frame" x="13" y="94" width="104" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="104" id="xWq-l7-cWO"/>
+                            <constraint firstAttribute="height" constant="32" id="znX-xN-bUx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="1" green="0.1647058824" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="降价通知" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUt-Gh-Piy">
+                        <rect key="frame" x="350" y="107" width="80" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="jAM-ES-yTB"/>
+                            <constraint firstAttribute="width" constant="80" id="xg6-9M-OXj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="比电脑购买省8元" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzE-T6-Zv4">
+                        <rect key="frame" x="105" y="128" width="130" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="OXe-I3-pYJ"/>
+                            <constraint firstAttribute="height" constant="29" id="QTi-xH-c5a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="掌上专享" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsp-Nt-Wwl">
+                        <rect key="frame" x="18" y="130" width="79" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="79" id="GMz-SF-hjD"/>
+                            <constraint firstAttribute="height" constant="26" id="if6-fK-uQo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_more.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nzs-0c-w76">
+                        <rect key="frame" x="386" y="8" width="44" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="33E-d5-LBj"/>
+                            <constraint firstAttribute="width" constant="44" id="s6O-cL-cVC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欧莱雅集团是美妆品行业中的领导者，经营范围遍及130多个国家和地区，在全球拥有283家分公司" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osu-cO-W2M">
+                        <rect key="frame" x="13" y="14" width="365" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="YUA-6P-e8A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="osu-cO-W2M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="2rD-te-id8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hsp-Nt-Wwl" secondAttribute="bottom" constant="-1" id="433-b3-M2V"/>
+                    <constraint firstItem="Nzs-0c-w76" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="6wo-Jn-mxi"/>
+                    <constraint firstItem="NWB-lE-BlZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="AU8-8Q-6hG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rzE-T6-Zv4" secondAttribute="bottom" constant="-2" id="CY4-ZZ-Kw8"/>
+                    <constraint firstItem="Hsp-Nt-Wwl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="GG4-Ow-jmv"/>
+                    <constraint firstItem="DUt-Gh-Piy" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="GZs-DH-APG"/>
+                    <constraint firstItem="7IC-DX-ALf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="86" id="Juz-0O-zRU"/>
+                    <constraint firstItem="osu-cO-W2M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="NnH-sY-Nvo"/>
+                    <constraint firstItem="rzE-T6-Zv4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="97" id="eQg-aG-KML"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DUt-Gh-Piy" secondAttribute="bottom" constant="19" id="jI8-Hc-Qsl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="osu-cO-W2M" secondAttribute="trailing" constant="52" id="obf-ug-BLy"/>
+                    <constraint firstItem="Nzs-0c-w76" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="owd-dc-fnF"/>
+                    <constraint firstItem="7IC-DX-ALf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="q0k-br-S5H"/>
+                    <constraint firstItem="NWB-lE-BlZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="51" id="rfK-ki-dkG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NWB-lE-BlZ" secondAttribute="trailing" constant="46" id="w8v-Tz-20f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblAdditionInfo" destination="NWB-lE-BlZ" id="ZuN-Ip-VAP"/>
+                <outlet property="lblNameOfProduct" destination="osu-cO-W2M" id="Sv4-Rf-3Nv"/>
+                <outlet property="lblPrice" destination="7IC-DX-ALf" id="7Ex-eU-Urp"/>
+            </connections>
+            <point key="canvasLocation" x="116" y="311"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list_more.png" width="20" height="20"/>
+    </resources>
+</document>
