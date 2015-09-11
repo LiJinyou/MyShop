@@ -9,18 +9,16 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#import <ComponentKit/ComponentKit.h>
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@class QuoteContext;
 
-/**
- A sombre quote component sandwiches a quote between two thick lines and puts them on top of a somwhat sombre background.
- */
-@interface SombreQuoteComponent : CKCompositeComponent
+@interface Quote : NSObject
 
 @property (nonatomic, readonly, copy) NSString *text;
+@property (nonatomic, strong) UIImage *image;
 
-+ (instancetype)newWithText:(NSDictionary *)dict context:(QuoteContext *)context;
 
+- (instancetype)initWithText:(NSString *)text
+                      image:(UIImage *)image;
 
 @end

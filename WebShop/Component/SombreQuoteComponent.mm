@@ -15,44 +15,62 @@
 #import "QuoteContext.h"
 
 @implementation SombreQuoteComponent
-
-+ (instancetype)newWithText:(NSString *)text context:(QuoteContext *)context
 {
+    NSString *_string;
+}
+
++ (instancetype)newWithText:(NSDictionary *)dict context:(QuoteContext *)context
+{
+  
+    
   return [super newWithComponent:
           [QuoteWithBackgroundComponent
-           newWithBackgroundImage:[context imageNamed:@"bg1"]
+           newWithBackgroundImage:[UIImage imageNamed:[dict objectForKey:@"background"]]
            quoteComponent:
            [CKInsetComponent
-            newWithInsets:{.top = 40, .left = 30, .bottom = 40, .right = 30}
+            newWithInsets:{.top = 0, .left = 0, .bottom = 0, .right = 0}
             component:
             [CKStackLayoutComponent
-             newWithView:{}
+             newWithView:{
+                 [UIView class],
+                 {CKComponentTapGestureAttribute(@selector(didTap:))}
+             }
              size:{}
              style:{.spacing = 50}
              children:{
-               {lineComponent()},
+               {
+                   [CKComponent
+                    newWithView:{
+                        
+                        [UIImageView class],
+                        {
+                            {@selector(setImage:), [UIImage imageNamed:[dict objectForKey:@"image"]]},
+                            {@selector(setContentMode:), @(UIViewContentModeScaleAspectFill)},
+                            {@selector(setClipsToBounds:), @YES},
+                        }
+                    }
+                    size:{90,90}]
+               },
                {[CKLabelComponent
                  newWithLabelAttributes:{
-                   .string = [text uppercaseString],
+                   .string = [[dict objectForKey:@"text"] uppercaseString],
                    .color = [UIColor whiteColor],
-                   .font = [UIFont fontWithName:@"Avenir-Black" size:25]
+                   .font = [UIFont fontWithName:@"Avenir-Black" size:15]
                  }
                  viewAttributes:{
                    {@selector(setBackgroundColor:), [UIColor clearColor]},
-                   {@selector(setUserInteractionEnabled:), @NO},
+                   {@selector(setUserInteractionEnabled:), @YES},
                  }]},
-               {lineComponent()},
+             
              }]]]];;
 }
 
-static CKComponent *lineComponent()
+
+
+-(void)didTap:(UIButton*)button
 {
-  return [CKComponent
-          newWithView:{
-            [UIView class],
-            {{@selector(setBackgroundColor:), [UIColor whiteColor]}}
-          }
-          size:{50, 5}];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"componentInfo" object:@""];
 }
 
 @end

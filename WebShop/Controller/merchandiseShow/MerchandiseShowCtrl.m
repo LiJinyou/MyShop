@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title=@"商品展示";
+    self.navigationItem.title=@"商场";
     
     [self getData];
     

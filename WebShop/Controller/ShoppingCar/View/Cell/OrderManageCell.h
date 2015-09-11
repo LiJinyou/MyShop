@@ -10,7 +10,8 @@
 
 @protocol deleteOrder <NSObject>
 
-- (void)deleteOeder:(NSString *)orderId;
+- (void)deleteOeder:(NSString *)orderID;
+- (void)sendIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
@@ -19,6 +20,8 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imgOrder;
 @property (strong, nonatomic) IBOutlet UILabel *lblOrderName;
 @property (strong, nonatomic) IBOutlet UILabel *lblReallyPay;
+@property (strong, nonatomic) IBOutlet UIButton *btnDelete;
+@property (strong, nonatomic) NSIndexPath *indexPath;
 
 @property (weak, nonatomic) id<deleteOrder> delegate;
 

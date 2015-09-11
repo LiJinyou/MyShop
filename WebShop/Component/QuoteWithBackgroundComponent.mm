@@ -30,7 +30,7 @@
                 {@selector(setClipsToBounds:), @YES},
               }
             }
-            size:{}]]];
+            size:{90,90}]]];
 }
 
 @end

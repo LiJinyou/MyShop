@@ -12,22 +12,34 @@
 	<dict>
 		<key>39FD3B746899241188F1AF351E02194E3C9A9171</key>
 		<string>https://github.com/webShopOriganization/WebShop.git</string>
+		<key>CA90F4AA8C2497D4797344DF672F967B4EFED51D</key>
+		<string>https://github.com/LiJinyou/MyShop.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WebShop.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>39FD3B746899241188F1AF351E02194E3C9A9171</key>
+		<string>../../WebShop</string>
+		<key>CA90F4AA8C2497D4797344DF672F967B4EFED51D</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/webShopOriganization/WebShop.git</string>
+	<string>https://github.com/LiJinyou/MyShop.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>39FD3B746899241188F1AF351E02194E3C9A9171</string>
+	<string>CA90F4AA8C2497D4797344DF672F967B4EFED51D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA90F4AA8C2497D4797344DF672F967B4EFED51D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyShop</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

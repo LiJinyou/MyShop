@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>ComponentKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -32,6 +37,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4A8FAAABDB6EEACCBAB9F1A804F3B5E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6951DA9871DA259A9AAA6EFC68AEF8EB</key>
 		<dict>
 			<key>primary</key>
@@ -42,7 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>E07E70B6FD71E603E5FC9882A18C8C54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E0A0843C35E4406010926441E5E9C150</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA1CB779A8E1F32F565CB388A1D6974F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

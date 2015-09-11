@@ -22,8 +22,9 @@
 
 - (IBAction)deleteBtnClick:(id)sender {
     NSLog(@"delete");
-    
+
     [self.delegate deleteOeder:self.lblOrderName.text];
+    [self.delegate sendIndexPath:self.indexPath];
     
 }
 

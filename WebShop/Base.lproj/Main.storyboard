@@ -88,7 +88,7 @@
                             <view hidden="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAh-QU-nR0">
                                 <rect key="frame" x="0.0" y="475" width="320" height="44"/>
                                 <subviews>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnRed.png" translatesAutoresizingMaskIntoConstraints="NO" id="gGx-Bv-LMr">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnRed.png" translatesAutoresizingMaskIntoConstraints="NO" id="gGx-Bv-LMr">
                                         <rect key="frame" x="15" y="12" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="L4S-7m-aLm"/>

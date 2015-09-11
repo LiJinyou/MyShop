@@ -10,6 +10,7 @@
 
 @interface OrderManageCtrl ()<deleteOrder, UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
+@property (strong, nonatomic) NSIndexPath *indexPath;
 
 @end
 
@@ -41,8 +42,8 @@
 
 }
 
-- (void)deleteOeder:(NSString *)orderId{
-    NSLog(@"orderID = %@", orderId);
+- (void)deleteOeder:(NSString *)orderID{
+    NSLog(@"选中行: %ld, orderID = %@", (long)self.indexPath.row, orderID);
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
                                   initWithTitle:@"确认删除此订单？"
@@ -54,13 +55,32 @@
     [actionSheet showInView:self.tabBarController.view];
 }
 
+- (void)sendIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"indexPath.row = %ld", (long)indexPath.row);
+
+    self.indexPath = indexPath;
+    
+}
+
+/** 确认删除订单 */
+- (void)ConfirmDelete {
+    NSLog(@"%s", __func__);
+    
+    [self.arrayOrder removeObjectAtIndex:self.indexPath.row];  //删除数组里的数据
+    [self.tableView beginUpdates];
+    [self.tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:self.indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];  //删除对应数据的cell
+    [self.tableView endUpdates];
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - UIActionSheetDelegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if (buttonIndex == 0) {
         NSLog(@"删除订单操作");
         
-//        [self.tableView deleteRowsAtIndexPaths:<#(NSArray *)#> withRowAnimation:<#(UITableViewRowAnimation)#>];
+        [self ConfirmDelete];
         
     }else if (buttonIndex == 1){
         NSLog(@"取消删除");
@@ -149,6 +169,7 @@
             NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:CellId owner:self options:nil];
             cell = [topLevelObjects objectAtIndex:0];
             
+            cell.indexPath = indexPath;
             cell.delegate = self;
             [cell initWithDic:nil];
             [cell configWithDic:dic];
