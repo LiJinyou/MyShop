@@ -95,6 +95,9 @@
 		E9B4BEEB1BA5B3E000F19F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BEEA1BA5B3E000F19F4C /* Main.storyboard */; };
 		E9B4BEEE1BA5B4C100F19F4C /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BEEC1BA5B4C100F19F4C /* nav_back@2x.png */; };
 		E9B4BEEF1BA5B4C100F19F4C /* nav_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BEED1BA5B4C100F19F4C /* nav_back@3x.png */; };
+		E9B4BEF21BA5BA0E00F19F4C /* ReactView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BEF11BA5BA0E00F19F4C /* ReactView.m */; };
+		E9B4BEF61BA5BBF000F19F4C /* ReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4BEF41BA5BBF000F19F4C /* ReactViewController.m */; };
+		E9B4BEF71BA5BBF000F19F4C /* ReactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B4BEF51BA5BBF000F19F4C /* ReactViewController.xib */; };
 		E9BCEBA01B9DCA6000E5DF99 /* order.json in Resources */ = {isa = PBXBuildFile; fileRef = E9BCEB9F1B9DCA6000E5DF99 /* order.json */; };
 		E9BCEBA21B9DCAC200E5DF99 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = E9BCEBA11B9DCAC200E5DF99 /* user.json */; };
 		E9BCEBA61B9DD1A100E5DF99 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCEBA51B9DD1A100E5DF99 /* NetworkManager.m */; };
@@ -244,6 +247,11 @@
 		E9B4BEEA1BA5B3E000F19F4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E9B4BEEC1BA5B4C100F19F4C /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
 		E9B4BEED1BA5B4C100F19F4C /* nav_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@3x.png"; sourceTree = "<group>"; };
+		E9B4BEF01BA5BA0E00F19F4C /* ReactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactView.h; sourceTree = "<group>"; };
+		E9B4BEF11BA5BA0E00F19F4C /* ReactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactView.m; sourceTree = "<group>"; };
+		E9B4BEF31BA5BBF000F19F4C /* ReactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactViewController.h; sourceTree = "<group>"; };
+		E9B4BEF41BA5BBF000F19F4C /* ReactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactViewController.m; sourceTree = "<group>"; };
+		E9B4BEF51BA5BBF000F19F4C /* ReactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactViewController.xib; sourceTree = "<group>"; };
 		E9BCEB9F1B9DCA6000E5DF99 /* order.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order.json; sourceTree = "<group>"; };
 		E9BCEBA11B9DCAC200E5DF99 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		E9BCEBA31B9DD13F00E5DF99 /* NetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConfig.h; sourceTree = "<group>"; };
@@ -513,6 +521,11 @@
 				219B79A81B9D8B4D00325AB0 /* MerchandiseShowCtrl.m */,
 				219296A81BA038B800D9860B /* ShoppingListCtrl.h */,
 				219296A91BA038B800D9860B /* ShoppingListCtrl.mm */,
+				E9B4BEF01BA5BA0E00F19F4C /* ReactView.h */,
+				E9B4BEF11BA5BA0E00F19F4C /* ReactView.m */,
+				E9B4BEF31BA5BBF000F19F4C /* ReactViewController.h */,
+				E9B4BEF41BA5BBF000F19F4C /* ReactViewController.m */,
+				E9B4BEF51BA5BBF000F19F4C /* ReactViewController.xib */,
 			);
 			path = merchandiseShow;
 			sourceTree = "<group>";
@@ -719,6 +732,7 @@
 			files = (
 				218AC3471BA2D49300FF9A25 /* Evaluation_1@2x.png in Resources */,
 				218AC3461BA2D49300FF9A25 /* Evaluation_0@3x.png in Resources */,
+				E9B4BEF71BA5BBF000F19F4C /* ReactViewController.xib in Resources */,
 				E9B4BEEE1BA5B4C100F19F4C /* nav_back@2x.png in Resources */,
 				E9B4BED11BA5AFE400F19F4C /* ProductDetail.storyboard in Resources */,
 				E9B4BED91BA5B08C00F19F4C /* ProvinceCell.xib in Resources */,
@@ -851,11 +865,13 @@
 				219296A61BA0320E00D9860B /* LoginViewController.m in Sources */,
 				218AC3541BA30DFA00FF9A25 /* PriceCell.m in Sources */,
 				E9B4BED81BA5B08C00F19F4C /* ProvinceCell.m in Sources */,
+				E9B4BEF21BA5BA0E00F19F4C /* ReactView.m in Sources */,
 				218F54A81B9EB52D003226C3 /* UserLoginInfo.m in Sources */,
 				219B79A61B9D8B3200325AB0 /* MemberCenterCtrl.m in Sources */,
 				218AC3301BA2D0A900FF9A25 /* CommonCell.m in Sources */,
 				216F913D1BA125FA00020FCF /* CollectionViewCell.m in Sources */,
 				E9B4BEDB1BA5B0C100F19F4C /* DetailProdutCtrl.m in Sources */,
+				E9B4BEF61BA5BBF000F19F4C /* ReactViewController.m in Sources */,
 				23D481691BA00C4F0036B9DC /* ShoppingCartCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>React.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>16C935530C4D2B9194A436944DBD386A</key>
+		<key>17B7C86D43F114C516A7C12A0297CD6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>34B86E57DD30B55AC60E75C172D7C662</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57D27288751D0BBACCDFDA59C2652178</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFEA969F7958C2DCDFDEEA5B1EEDA401</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ECB0158B96D64EAB9914C797BAF6D754</key>
+		<key>CB97D0106869044FA8B508D04C35D567</key>
 		<dict>
 			<key>primary</key>
 			<true/>

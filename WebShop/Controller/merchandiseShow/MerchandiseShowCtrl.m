@@ -9,6 +9,7 @@
 #import "MerchandiseShowCtrl.h"
 #import "NetworkManager.h"
 #import "ShoppingListCtrl.h"
+#import "ReactViewController.h"
 
 @interface MerchandiseShowCtrl ()
 
@@ -31,9 +32,23 @@
     UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
     [button setFrame:CGRectMake(100, 100, 100, 60)];
     [button addTarget:self action:@selector(goTestView:) forControlEvents:UIControlEventTouchUpInside];
-    [button setTitle:@"测试" forState:UIControlStateNormal];
+    [button setTitle:@"商品列表" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.view addSubview:button];
+    
+    UIButton *button1=[UIButton buttonWithType:UIButtonTypeCustom];
+    [button1 setFrame:CGRectMake(100, 200, 100, 60)];
+    [button1 addTarget:self action:@selector(goReactView) forControlEvents:UIControlEventTouchUpInside];
+    [button1 setTitle:@"测试" forState:UIControlStateNormal];
+    [button1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.view addSubview:button1];
+}
+
+-(void)goReactView
+{
+    ReactViewController *vc=[[ReactViewController alloc]initWithNibName:@"ReactViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 -(void)goTestView:(UIButton*)button

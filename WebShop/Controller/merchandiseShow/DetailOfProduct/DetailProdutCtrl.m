@@ -120,7 +120,7 @@
 //    MapController *vc=[[MapController alloc]initWithNibName:@"MapController" bundle:nil];
 //    [self.navigationController pushViewController:vc animated:YES];
     
-    NSLog(@"测试");
+
     
     [self.frostedViewController presentMenuViewController];
     

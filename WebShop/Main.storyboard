@@ -424,8 +424,9 @@
         <!--Navigation Controller-->
         <scene sceneID="D8E-cM-MMf">
             <objects>
-                <navigationController storyboardIdentifier="contentController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o32-cm-KHB" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="contentController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="o32-cm-KHB" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H5P-ir-RuU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
