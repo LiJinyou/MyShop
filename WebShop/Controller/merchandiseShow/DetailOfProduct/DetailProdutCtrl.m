@@ -10,6 +10,13 @@
 #import "CommonCell.h"
 #import "CommentDetailCell.h"
 #import "LookAllCommentCell.h"
+#import "ServiceInfoCell.h"
+#import "MapController.h"
+#import "REFrostedViewController.h"
+#import "UIView+REFrostedViewController.h"
+#import "GetCityCtrl.h"
+//#import "GetProvinceCtrl.h"
+#import "ProvinceCtrl.h"
 
 @interface DetailProdutCtrl ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) NSMutableArray *arrayOfData;
@@ -22,6 +29,8 @@
     // Do any additional setup after loading the view from its nib.
     self.arrayOfData=[[NSMutableArray alloc]initWithObjects:@"1",@"2", nil];
     self.navigationItem.title=@"商品详情";
+    
+    [self initUI];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,15 +38,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)initUI
+{
+    
+}
+
 #pragma mark - Table view data source
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* title=@"CommonCell";
+    static NSString* commonTitle=@"CommonCell";
+    static NSString* serviceInfoTitle=@"ServiceInfoCell";
     
     
-   
-        CommonCell* cell = [tableView dequeueReusableCellWithIdentifier:title];
+    if (indexPath.section==0) {
+        CommonCell* cell = [tableView dequeueReusableCellWithIdentifier:commonTitle];
         if (!cell) {
             
             NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CommonCell" owner:self options:nil];
@@ -45,6 +60,21 @@
             cell = [topLevelObjects objectAtIndex:0];
         }
         return cell;
+    }
+    else
+    {
+        ServiceInfoCell* cell = [tableView dequeueReusableCellWithIdentifier:serviceInfoTitle];
+        if (!cell) {
+            
+            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"ServiceInfoCell" owner:self options:nil];
+            
+            cell = [topLevelObjects objectAtIndex:0];
+        }
+        [cell.btnLocation addTarget:self action:@selector(goToMap:) forControlEvents:UIControlEventTouchUpInside];
+        
+        return cell;
+    }
+    
     
     
     return nil;
@@ -65,7 +95,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.arrayOfData.count;
+    return 1;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -76,15 +106,28 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section==0) {
-        return 291;
+        return 72;
     }
     
     else
     {
-        return 500;
+        return 240;
     }
 }
 
+-(void)goToMap:(UIButton*)button
+{
+//    MapController *vc=[[MapController alloc]initWithNibName:@"MapController" bundle:nil];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    NSLog(@"测试");
+    
+    [self.frostedViewController presentMenuViewController];
+    
+//    UIStoryboard *story=[UIStoryboard storyboardWithName:@"ProductDetail" bundle:nil];
+//    ProvinceCtrl *vc = [story instantiateViewControllerWithIdentifier:@"ProvinceCtrl"];
+//    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 /*

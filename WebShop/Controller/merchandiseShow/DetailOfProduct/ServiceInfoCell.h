@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ServiceInfoCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *lblProductName;
+@property (weak, nonatomic) IBOutlet UILabel *lblLocation;
+@property (weak, nonatomic) IBOutlet UILabel *lblServiceInfo;
+@property (weak, nonatomic) IBOutlet UILabel *lblServerier;
+@property (weak, nonatomic) IBOutlet UILabel *lblPayment;
+@property (weak, nonatomic) IBOutlet UILabel *lblAfterService;
+@property (weak, nonatomic) IBOutlet UIButton *btnLocation;
+
+
 
 @end

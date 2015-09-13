@@ -6,23 +6,53 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ComponentKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>REFrostedViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>12EFE639CCEC4DC4884BAB86E55484D0</key>
+		<key>16C935530C4D2B9194A436944DBD386A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E0A0843C35E4406010926441E5E9C150</key>
+		<key>6951DA9871DA259A9AAA6EFC68AEF8EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2C819AF49A3156BEF298B18DB632687</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFEA969F7958C2DCDFDEEA5B1EEDA401</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECB0158B96D64EAB9914C797BAF6D754</key>
 		<dict>
 			<key>primary</key>
 			<true/>
